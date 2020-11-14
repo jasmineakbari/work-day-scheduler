@@ -1,4 +1,7 @@
+// for today's date
 const today = moment();
+// get current time and format to hour
+var now = moment().format("H");
 // empty array to hold events
 var events = [];
 
@@ -6,8 +9,8 @@ var events = [];
 var displayDate = document.getElementById("currentDay");
 displayDate.innerHTML = today.format('ll');
 
-// get current time and format to hour
-var now = moment().format("H");
+// function to save text input as an object to local storage
+
 
 // Check time function and apply corresponding class
 var checkTimes = function() {
