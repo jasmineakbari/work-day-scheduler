@@ -3,14 +3,19 @@ const today = moment();
 // get current time and format to hour
 var now = moment().format("H");
 // empty array to hold events
-var events = [];
+var events = JSON.parse(localStorage.getItem('eventslisted')) || [];
 
 // display date function
 var displayDate = document.getElementById("currentDay");
 displayDate.innerHTML = today.format('ll');
 
-// function to save text input as an object to local storage
+// eventlistener to save text input as an object to local storage
+$(".saveBtn").on("click", function() {
+    
 
+    // save items to main array
+    localStorage.setItem('eventslisted', JSON.stringify(events));
+})
 
 // Check time function and apply corresponding class
 var checkTimes = function() {
