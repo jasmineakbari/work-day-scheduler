@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css" integrity="sha512-LeCmts7kEi09nKc+DwGJqDV+dNQi/W8/qb0oUSsBLzTYiBwxj0KBlAow2//jV7jwEHwSCPShRN2+IWwWcn1x7Q==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
@@ -20,127 +20,104 @@
     </header>
     <!-- 9 am event row -->
     <div class="container">
-      <div class="row">
-        <div class="col-time col-sm-1">
-          <p>9 AM</p>
+      <div class="time-block col">
+        <div class="row">
+            <span class="col-1 hour text-right">9 AM</span>
+            <textarea class="col description border"></textarea>
+            <button class="col-1 fi-lock-locked saveBtn">
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-lock-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.5 9a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2V9z"/>
+                <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
+              </svg>
+            </button>
         </div>
-        <div class="col-text col-sm-10">
-          <p>Sample Event Here</p>
+        <!-- 10 am event row -->
+        <div class="row">
+          <span class="col-1 hour text-right">10 AM</span>
+          <textarea class="col description border"></textarea>
+          <button class="col-1 fi-lock-locked saveBtn">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-lock-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.5 9a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2V9z"/>
+              <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
+            </svg>
+          </button>
         </div>
-        <div class="col-btn col-sm-1">
-          <button></button>
+        <!-- 11 am event row -->
+        <div class="row">
+          <span class="col-1 hour text-right">11 AM</span>
+          <textarea class="col description border"></textarea>
+          <button class="col-1 fi-lock-locked saveBtn">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-lock-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.5 9a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2V9z"/>
+              <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
+            </svg>
+          </button>
         </div>
-      </div>
-    </div>
-    <!-- 10 am event row -->
-    <div class="container">
-      <!-- 10 am event row -->
-      <div class="row">
-        <div class="col-time col-sm-1">
-
+        <!-- 12 pm event row -->
+        <div class="row">
+          <span class="col-1 hour text-right">12 PM</span>
+          <textarea class="col description border"></textarea>
+          <button class="col-1 fi-lock-locked saveBtn">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-lock-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.5 9a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2V9z"/>
+              <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
+            </svg>
+          </button>
         </div>
-        <div class="col-text col-sm-10">
-
+        <!-- 1 pm event row -->
+        <div class="row">
+          <span class="col-1 hour text-right">1 PM</span>
+          <textarea class="col description border"></textarea>
+          <button class="col-1 fi-lock-locked saveBtn">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-lock-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.5 9a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2V9z"/>
+              <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
+            </svg>
+          </button>
         </div>
-        <div class="col-btn col-sm-1">
+        <!-- 2 pm event row -->
+        <div class="row">
+          <span class="col-1 hour text-right">2 PM</span>
+          <textarea class="col description border"></textarea>
+          <button class="col-1 fi-lock-locked saveBtn">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-lock-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.5 9a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2V9z"/>
+              <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
+            </svg>
+          </button>
         </div>
-      </div>
-    </div>
-    <!-- 11 am event row -->
-    <div class="container">
-      <div class="row">
-        <div class="col-time col-sm-1">
-
+        <!-- 3 pm event row -->
+        <div class="row">
+          <span class="col-1 hour text-right">3 PM</span>
+          <textarea class="col description border"></textarea>
+          <button class="col-1 fi-lock-locked saveBtn">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-lock-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.5 9a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2V9z"/>
+              <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
+            </svg>
+          </button>
         </div>
-        <div class="col-text col-sm-10">
-
+        <!-- 4 pm event row --> 
+        <div class="row">
+          <span class="col-1 hour text-right">4 PM</span>
+          <textarea class="col description border"></textarea>
+          <button class="col-1 fi-lock-locked saveBtn">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-lock-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.5 9a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2V9z"/>
+              <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
+            </svg>
+          </button>
         </div>
-        <div class="col-btn col-sm-1">
-
-        </div>
-      </div>
-    </div>
-    <!-- 12 pm event row -->
-    <div class="container">
-      <div class="row">
-        <div class="col-time col-sm-1">
-
-        </div>
-        <div class="col-text col-sm-10">
-
-        </div>
-        <div class="col-btn col-sm-1">
-
-        </div>
-      </div>
-    </div>
-    <!-- 1 pm event row -->
-    <div class="container">
-      <div class="row">
-        <div class="col-time col-sm-1">
-
-        </div>
-        <div class="col-text col-sm-10">
-
-        </div>
-        <div class="col-btn col-sm-1">
-
-        </div>
-      </div>
-    </div>
-    <!-- 2 pm event row -->
-    <div class="container">
-      <div class="row">
-        <div class="col-time col-sm-1">
-
-        </div>
-        <div class="col-text col-sm-10">
-
-        </div>
-        <div class="col-btn col-sm-1">
-
-        </div>
-      </div>
-    </div>
-    <!-- 3 pm event row -->
-    <div class="container">
-      <div class="row">
-        <div class="col-time col-sm-1">
-
-        </div>
-        <div class="col-text col-sm-10">
-
-        </div>
-        <div class="col-btn col-sm-1">
-
-        </div>
-      </div>
-    </div>
-    <!-- 4 pm event row --> 
-    <div class="container">
-      <div class="row">
-        <div class="col-time col-sm-1">
-
-        </div>
-        <div class="col-text col-sm-10">
-
-        </div>
-        <div class="col-btn col-sm-1">
-
-        </div>
-      </div>
-    </div>
-    <!-- 5 pm event row -->
-    <div class="container">
-      <div class="row">
-        <div class="col-time col-sm-1">
-
-        </div>
-        <div class="col-text col-sm-10">
-
-        </div>
-        <div class="col-btn col-sm-1">
-
+        <!-- 5 pm event row -->
+        <div class="row">
+          <span class="col-1 hour text-right">5 PM</span>
+          <textarea class="col description border"></textarea>
+          <button class="col-1 fi-lock-locked saveBtn">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-lock-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.5 9a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2V9z"/>
+              <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
+            </svg>
+          </button>
         </div>
       </div>
     </div>
