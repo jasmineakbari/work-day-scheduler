@@ -1,9 +1,20 @@
 const today = moment();
+// empty array to hold events
+var events = {};
 
 // display date function
 var displayDate = document.getElementById("currentDay");
 displayDate.innerHTML = today.format('ll');
 
-// var events = JSON.parse(localStorage.getItem('eventslisted')) || [];
 
-// localStorage.setItem('eventslisted', JSON.stringify(events));
+// function to load events locally stored
+var events = JSON.parse(localStorage.getItem('eventslist')) || [];
+
+
+$("#saveBtn").on("click", function() {
+    // get value of textarea
+    var text = $("<textarea>").closest.val().trim();
+
+    localStorage.setItem('eventslist', JSON.stringify(events));
+    
+})
